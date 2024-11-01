@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+  outline: none;
+  color: black
+}
+
+body {
+  background: url("./Img/Fundo\ img\ projeto.jpg");
+}
+
+
+.container {
+  background-color: rgb(230, 190, 203);
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px auto 0;
+}
+
+.input-task {
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.button-add-task {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  background-color: rgb(79, 75, 75);
+  color: palevioletred;
+  font-size: 17px;
+  padding: 0 15px;
+  float: right;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.button-add-task:hover {
+  opacity: 0.9;
+}
+
+.button-add-task:active {
+  opacity: 0.6;
+}
+
+.list-tasks {
+  width: 100%;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.task {
+  background-color: palevioletred;
+  box-shadow: 1px 4px 10px rgb(79, 75, 75);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+img {
+  height: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img {
+  opacity: 1;
+}
+
+.done {
+  background-color: rgb(70, 151, 70);
+  text-decoration: line-through;
+}
